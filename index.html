@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meri Website</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Arial;margin:0;padding:16px;background:#f7f7f7}
+    .card{max-width:800px;margin:18px auto;padding:18px;border-radius:10px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    a.btn{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;text-decoration:none;border:1px solid #333}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Mera Naam — Aapka Naam</h1>
+    <p>Yeh meri pehli website hai. Yahan apna intro, contact aur projects likh sakte ho.</p>
+    <p><strong>Contact:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
+    <a class="btn" href="#projects">Projects dekho</a>
+  </div>
+
+  <div class="card" id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Project 1 — short description</li>
+      <li>Project 2 — short description</li>
+    </ul>
+  </div>
+
+  <footer style="text-align:center;color:#666;margin:18px">© <span id="y"></span> Aapka Naam
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
